@@ -81,14 +81,30 @@ class MatchingApp:
         self.show_candidate()
 
     def show_candidate(self):
-        if self.current_candidate_index < len(self.matches):
-            candidate, score = self.matches[self.current_candidate_index]
+        """Displays the current candidate's details in the GUI."""
+        if self.current_match_index < len(self.match_queue):
+            # Get the current candidate
+            candidate = self.match_queue[self.current_match_index]
+
+            # Extract candidate details
+            candidate_name = candidate['Name']
+            candidate_gender = "Woman" if candidate['Gender'] == "F" else "Man"
+            candidate_category = candidate['Category']
+            candidate_specific_category = candidate['Spesific_category']
+            candidate_description = candidate['Descriptions']
+
+            # Update the labels with candidate details
             self.candidate_label.config(
-                text=f"Name: {candidate['Name']}\nCategory: {candidate['Category']}\nSpecific: {candidate['Spesific category']}\nScore: {score:.2f}"
+                text=f"Name: {candidate_name}\n"
+                     f"Gender: {candidate_gender}\n"
+                     f"Category: {candidate_category}\n"
+                     f"Specific Category: {candidate_specific_category}\n"
+                     f"Description: {candidate_description}"
             )
         else:
-            messagebox.showinfo("End", "No more candidates!")
-            self.candidate_label.config(text="")
+            # No more candidates
+            self.candidate_label.config(text="No more matches available!")
+            messagebox.showinfo("End of Matches", "You've viewed all matches!")
 
     def next_candidate(self):
         self.current_candidate_index += 1
@@ -121,7 +137,7 @@ if __name__ == "__main__":
     }
 
     # Load data
-    data = load_data(file_path)
+    data = load_data(dummy.csv)
 
     # Start GUI
     root = Tk()
