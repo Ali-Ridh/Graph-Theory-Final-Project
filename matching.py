@@ -53,6 +53,7 @@ def calculate_match_score(person, candidate, weights, traits):
     return score
 
 # GUI Application
+# GUI Application
 class MatchingApp:
     def __init__(self, master, data, weights, traits):
         self.master = master
@@ -115,13 +116,19 @@ class MatchingApp:
             candidate_specific_category = candidate['Spesific_category']
             candidate_description = candidate['Descriptions']
 
+            # Calculate distance
+            user_loc = tuple(map(float, self.current_user["Locations"].split(';')))
+            candidate_loc = tuple(map(float, candidate["Locations"].split(';')))
+            distance = geodesic(user_loc, candidate_loc).kilometers
+
             # Update the labels with candidate details
             self.candidate_label.config(
                 text=f"Name: {candidate_name}\n"
                      f"Gender: {candidate_gender}\n"
                      f"Category: {candidate_category}\n"
                      f"Specific Category: {candidate_specific_category}\n"
-                     f"Description: {candidate_description}"
+                     f"Description: {candidate_description}\n"
+                     f"Distance: {distance:.2f} km"
             )
         else:
             # No more candidates
@@ -146,7 +153,7 @@ if __name__ == "__main__":
         "category": 10,
         "specific_category": 20,
         "multiple_interests": 5,
-        "distance": 100,
+        "distance": 50,
         "former_match": -10  # Penalize if they matched before
     }
 
@@ -159,5 +166,5 @@ if __name__ == "__main__":
     # Start GUI
     root = Tk()
     app = MatchingApp(root, data, weights, traits)
-    app.set_user("S001")  # Set initial user (change as needed)
+    app.set_user("S029")  # Set initial user (change as needed)
     root.mainloop()

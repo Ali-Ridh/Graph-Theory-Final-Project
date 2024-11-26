@@ -1,5 +1,0 @@
-ID,Name,Gender,Category,Spesific_category,Descriptions,Locations,Former_matched
-U01,Alice,F,Entertainment,Music,Likes classical music,-7.2504; 112.7521,U03
-U02,Bob,M,Fitness & Sports,Cycling,Enjoys mountain biking,-7.2505; 112.7525,U01
-U03,Charlie,M,Education,Programming,Loves coding challenges,-7.2508; 112.7530,U02
-U04,Diana,F,Social Interest,Romance,Looking for a soulmate,-7.2510; 112.7540,
