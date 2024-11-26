@@ -137,7 +137,7 @@ if __name__ == "__main__":
     }
 
     # Load data
-    data = load_data(dummy.csv)
+    data = load_data(file_path)
 
     # Start GUI
     root = Tk()
