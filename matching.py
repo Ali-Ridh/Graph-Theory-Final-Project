@@ -1,13 +1,22 @@
 import pandas as pd
 from geopy.distance import geodesic
-from tkinter import Tk, Label, Button, PhotoImage, Toplevel, messagebox
+from tkinter import Tk, Label, Button, messagebox
 
 # Load dataset
 def load_data(file_path):
     data = pd.read_csv(file_path)
-    validate_coordinates(data)
     return data
 
+# Generate traits from Category and Specific_category
+def generate_traits(data):
+    traits = {}
+    for _, row in data.iterrows():
+        # Create a set of traits for each user (could be expanded as needed)
+        user_id = row["ID"]
+        category = row["Category"]
+        specific_category = row["Spesific_category"]
+        traits[user_id] = {category, specific_category}
+    return traits
 
 def validate_coordinates(data):
     for index, row in data.iterrows():
@@ -32,8 +41,8 @@ def calculate_match_score(person, candidate, weights, traits):
     score += weights["multiple_interests"] * overlapping_interests
 
     # Distance
-    person_loc = tuple(map(float, person["Locations"].split(',')))
-    candidate_loc = tuple(map(float, candidate["Locations"].split(',')))
+    person_loc = tuple(map(float, person["Locations"].split(';')))
+    candidate_loc = tuple(map(float, candidate["Locations"].split(';')))
     distance = geodesic(person_loc, candidate_loc).kilometers
     score += max(0, weights["distance"] / (1 + distance))  # Penalize farther distances
 
@@ -73,7 +82,10 @@ class MatchingApp:
         self.dislike_button.pack(side="right", padx=50, pady=10)
 
     def set_user(self, user_id):
-        self.current_user = self.data[self.data["ID"] == user_id].iloc[0]
+        user_data = self.data[self.data["ID"] == user_id]
+        if user_data.empty:
+            raise ValueError(f"No ID With: {user_id}")
+        self.current_user = user_data.iloc[0]
         self.user_label.config(text=f"Logged in as: {self.current_user['Name']} ({self.current_user['Category']})")
         self.prepare_matches()
 
@@ -92,9 +104,9 @@ class MatchingApp:
 
     def show_candidate(self):
         """Displays the current candidate's details in the GUI."""
-        if self.current_match_index < len(self.match_queue):
+        if self.current_candidate_index < len(self.matches):
             # Get the current candidate
-            candidate = self.match_queue[self.current_match_index]
+            candidate, _ = self.matches[self.current_candidate_index]
 
             # Extract candidate details
             candidate_name = candidate['Name']
@@ -121,13 +133,13 @@ class MatchingApp:
         self.show_candidate()
 
     def like_candidate(self):
-        candidate, score = self.matches[self.current_candidate_index]
+        candidate, _ = self.matches[self.current_candidate_index]
         messagebox.showinfo("Match", f"You liked {candidate['Name']}!")
         self.next_candidate()
 
 # Main program
 if __name__ == "__main__":
-    file_path = "people_dataset.csv"  # Replace with your dataset file path
+    file_path = r"Datasets_Informatch.csv"  # Replace with your dataset file path
 
     # Define weights
     weights = {
@@ -138,19 +150,14 @@ if __name__ == "__main__":
         "former_match": -10  # Penalize if they matched before
     }
 
-    # Example trait mapping (for testing purposes)
-    traits = {
-        "U01": {"Music", "Movies"},
-        "U02": {"Movies", "Gaming"},
-        "U03": {"Gaming", "Swimming"},
-        # Add more traits
-    }
-
     # Load data
     data = load_data(file_path)
+    print(data.head())
+    # Generate traits from the loaded data
+    traits = generate_traits(data)
 
     # Start GUI
     root = Tk()
     app = MatchingApp(root, data, weights, traits)
-    app.set_user("U01")  # Set initial user (change as needed)
+    app.set_user("S001")  # Set initial user (change as needed)
     root.mainloop()

@@ -1,6 +1,0 @@
-ID,Name,Gender,Category,Spesific_category,Descriptions,Locations,Former_matched
-U01,Ali,M,Entertainment,Music,Friendly guy,"-7.2575,112.7521","U03;U05"
-U02,Ridho,M,Entertainment,Movies,Big fan of cinema,"-7.2599,112.7508","U01"
-U03,Ani,F,Education,Math,Loves teaching,"-7.2500,112.7400",""
-U04,Budi,M,Fitness & Sports,Swimming,Competitive swimmer,"-7.2400,112.7300","U01"
-U05,Citra,F,Social Interest,Romance,Looking for meaningful connections,"-7.2300,112.7200","U03"
