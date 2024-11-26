@@ -1,0 +1,83 @@
+ID,Name,Gender,Category,Spesific_category,Descriptions,Locations,Former_matched
+S001,Mustafa Kolbi,M,Entertainment,Music,Chill Guy who can determine music together,"-7.289132272398524, 112.80385771799708",S002;S009
+S002,Ilyas Rusdi,M,Entertainment,Movies,Rating some big films has been my one of my hobbies! you can see the wonderfulness of visualizations from the movies itself,"-7.293687081322703, 112.80454436350375",S001
+S003,Marin Amanda,F,Fitness & Sport,Basketball,Wanna find partner to play some baskatball together at Keputih Area,"-7.289150072875951, 112.80221053478395",S006;S044
+S004,Naufal A. Karim,M,Social Interest,Hangout,"I'm Lonely bro, needed finding reliable circle to grow together","-7.2929018483230665, 112.80414338134206",S023
+S005,Christo Alexander,M,Social Interest,Hangout,"Likes to meet new peoples, easy going, chill and relax","-7.291680074373919, 112.80569554242436",S020
+S006,Rudi T Madre,M,Fitness & Sports,Football,"Come on, lets play together to compared our skill together.","-7.290728194277333, 112.79935686904794",S003
+S007,Tatang Hilmanysah,M,Fitness & Sports,Football,"Find fellow football enthusiasts to play matches, discuss strategies, or cheer for your favorite teams together.","-7.2863695597369365, 112.80407930703583",S023;S035;S008
+S008,Farzan Milan,M,Fitness & Sports,Football,"Connect with someone passionate about football for game nights, training sessions, or fandom debates.","-7.289319151513301, 112.79897921774294",S007;S042
+S009,Adnan Rivera,M,Social Interest,Buddy,Meet a reliable friend who shares your interests and is always there for meaningful conversations or mutual support.,"-7.2869829312736165, 112.80388670734635",S001;S011
+S010,Barbara Lintangsari,F,Education,Math & Science ,"Partner with someone who enjoys solving equations, exploring scientific phenomena, or sharing knowledge in STEM.","-7.292424716946868, 112.80830960008844",S017
+S011,Gilang Efendi,M,Entertainment,Movie,"Currently on a classical movie marathon, join me if you want","-7.289662355612887, 112.80351701600375",S009
+S012,Hans Pramono,M,FItness & Sports,Running,"I like sunday morning jogging, wanna come with me ?","-7.288821671383173, 112.80269356153214",S013;S015
+S013,Ayu Runangsari,F,Social Interest,Hangout,"Hey im new in this town, Perhaps anyone can show me the ropes ?","-7.290106463144909, 112.80116465314833",S012;S014
+S014,Asep Saipul Azhar,M,Social Interest,Hangout,"I will gladly accompany anyone that needs a guide or similar, Free of charge of course","-7.289969578141659, 112.80381178085366",S013;S020
+S015,Lutfiyah Gitanjabi,F,FItness & Sports,Boxing,What better ways to let out your anger other than a quick boxing session ?,"-7.292637358781326, 112.80772932406502",S012;S018
+S016,Regina Shinomiya,F,Entertainment,Game,"Help me, im addicted to this new game that just released a week ago","-7.293288545554415, 112.80804605130629",S070
+S017,Benny Sinaga,M,Education,Computer & Programming,"Working on a website project, would love to get to know someone who understands creative design","-7.289969578141659, 112.80381178085366",S010;S018
+S018,Aziz Ariyanto,M,Entertainment,Music,"Im new to making musics, looking for someone that could teach me","-7.290743559190383, 112.80586845343177",S015;S017
+S019,Gunawan Sabar,M,Entertainment ,Books,"Meet someone who enjoys expanding their knowledge through biographies, self-help, or thought-provoking essays. Perfect for intellectual conversations and exchanging insights.
+
+","-7.291780204497003, 112.80968652595904",S074
+S020,Vinola Thalia,F,Social Interest,Hangout,Interested in some night riding through the city ?,"-7.292330311254113, 112.80701127125216",S014
+S021,Jomo King Jr,M,Social Interest,Buddy,"I just wanna hang out like the others, they make it look so easy. It's like nobody told them that it's the hardest thing in the world","-7.281015649564961, 112.78963559951909",S023
+S022,Acep Ryukendo,M,Fitness & Sports,Boxing,The power of the legendary dragons flows within me.,"-7.2879238651532114, 112.78134588500872",S062
+S023,Ohim serlok,M,Social Interest,Buddy,Shareloc I'll come to you,"-7.2840926712646175, 112.775552313429",S007;S021
+S024,Hero Bryan,M,Education,Engineering,My favorite game is Digbuild.,"-7.285473980321994, 112.77499354353216",S078
+S025,Sing Futang,M,Social Interest,Hangout,Just wanna drink Boba (blukutuk blukutuk),"-7.286471305852705, 112.7814673505813",S032
+S026,Kobo Beataeru,F,Fitness & Sports,Cycling,Bokobokobooo! Kobo Beataeru at your service!,"-7.281015649564955, 112.78963559951905",S033;S072
+S027,Rio Febri,M,Entertainment,Games,I like playing Visual Novels :love:,"-7.294939044166421, 112.77942862879345",S029;S052;S055
+S028,Furina Rawon,F,Entertainment,Movie,"Rawon restaurant? That sells for 10k Rupiah, full of topping and meat? So cheaapppp!","-7.2963217989570905, 112.7814569580755",S077
+S029,Ambarus Tronus,M,Fitness & Sports,Running,"From Sidoarjo, and I love Pop Mie","-7.28567374569572, 112.78518189669474",S027;S047
+S030,Voila Rose,F,Education,Study Partner,An uptown girl in an downtown world,"-7.295794791258140, 112.77813445976938",S036
+S031,Edvard Elrick,M,Education,Math & Science,Alchemy lover. Want some homemade philosopher stones? DM me,"-7.292019000859155, 112.77951029823465",S046
+S032,James H. Watsituya,M,Social Interest,Hangout,What's my name? FOR THE LAST TIME IT'S WATSITUYA!,"-7.287784709328471, 112.77742041522019",S025
+S033,Cintania Mavuika Himeko,F,Fitness & Sports,Cycling,My last bike was aflame for no reason,"-7.2963217989570895, 112.7814569580752",S026
+S034,Kaisar Baswedan,M,Fitness & Sports,Gym,Need a spotter.,"-7.288231017166249, 112.77770095574819",S054
+S035,Dylan Wylan,M,Entertainment,Movie,I love Indonesian Movies.  Love from Argentina,"-7.2889188909313685, 112.77754244667494",S007
+S036,Kirsten Citlali,F,Education,Study Partner,I just want someone to be there.,"-7.2963217989570876, 112.7814569580749",S030
+S037,Jane Joe,F,Education,Career,Proud owner of 10 pet mouse in my apartment. Don't tell the landlord :shush:,"-7.2903034996721825, 112.77628909992593",S060
+S038,Pavolia Reine Cantika,F,Education,Computer & Programming,I think i'm in the wrong course,"-7.295794791258141, 112.77813445976945",S039
+S039,Karin Enpisi,F,Education,Computer & Programming,Tired..,"-7.295198840391092, 112.77731906821069",S038;S076
+S040,Ellen Doe,F,Education,Economics,Candy eating shark 24/7,"-7.2903034996721810, 112.77628909992589",S053
+S041,Imron Sanjaya,M,Education,Engineering,Ain't no machine i can't fix,"-7.26154013043502, 112.80150252872946",S078
+S042,Ferdy Yunus,M,Fitness & Sports,Football,"Dunno what to put here, what if we meet up in a field for a friendly spar ?","-7.260380065336018, 112.798884692892",S008
+S043,Reynard Saputra,M,Social Interest,Buddy,Looking for a guy who likes driving cars,"-7.260092709298617, 112.80073005258069",S057
+S044,Fuad Denny,M,Fitness & Sports,Basketball,Dribblin balls all day long,"-7.260156566211682, 112.79697496019091",S003
+S045,Ivan Gunakan,M,Entertainment ,Music,Man why are indonesian song mostly are a bunch of sad and moody songs. Bring back fun and upbeat songs fr,"-7.263019475164397, 112.79722172340509",S050
+S046,Zen Gunawan,M,Education ,Math & Science,"I like math (help me, im suffering)","-7.263668682465632, 112.8009982734657",S031
+S047,Roy Apansa,M,Fitness & Sports,Running,"Preparring for a thriatlon, lets go on a jog together ","-7.264935166141467, 112.8025217680924",S029
+S048,Nassir Aswad,M,Education ,Study Partner,"Help me, i have a low attention span. Need someone to keep me focused","-7.264637170303495, 112.79649216259793",S075
+S049,Ridho Tulalit,M,Entertainment,Game,Im batman,"-7.262019055540066, 112.7921040686119",S051
+S050,Jake Logan,M,Entertainment,Music,I like my cheese moldy bruh,"-7.260273637214988, 112.79472190444937",S045
+S051,Watson Amelia,F,Entertainment,Game,I'll be back i promise. Wait for me okay ?,"-7.266298723726998, 112.79075949620851",S049
+S052,Anya Melfissa,F,Entertainment,Games,"Hi, I just moved here from japan. Would love some new gaming friends","-7.2659253614807255, 112.79438299750802",S027
+S053,Fana Selena,F,Education,Economics,Currently taing a degree in economincs. Would like to get to know someone in the same major :),"-7.269006336275842, 112.79210584707965",S040
+S054,Roy Darsono,M,Fitness & Sports,Gym,Im in my winter arc,"-7.270335242220238, 112.79581866017456",S034
+S055,Elfanum Dennis,M,Entertainment ,Games,Watch your back or imma tax you when you're not aware,"-7.27370071956376, 112.79511302415649","S027"""
+S056,Momo Winola,F,Social Interest,Hangout,Wanna try and hit the park together sometimes ?,"-7.273979154414162, 112.79529164745999",S066
+S057,Ranni Empira,F,Social Interest,Buddy,Are you perhaps the chosen one? (i need friend pls),"-7.275287848398695, 112.78823232606129",S059
+S058,Gabriella Trina,F,Entertaiinment ,Movie,Netflix and chill anyone ?,"-7.298535733314323, 112.77810873477152",S077
+S059,Alyssa Nadya,F,Social Interest,Buddy,Hi there ! i wanna be friends with you guys,"-7.29169962049377, 112.76630579450638",S043;S057
+S060,Yunita Marika,F,Education,Career,I used to rule a nation before you know?,"-7.29255387439388, 112.76458973491206",S037
+S061,Clorinde Chloride,F,Fitness & Sports,Carok,I want someone to spar (and LARP) with,"-7.290465695316515, 112.76571250996261",S064
+S062,Nexus Mobius,M,Fitness & Sports,Boxing,I feel the light coming inside me,"-7.293743499365019, 112.76453869967149",S023
+S063,Peggy Brown,M,Entertainment,Music,"Rap is so boooriiing nowadays. Listen to ""Scaring the Bros"".","-7.296375849743358, 112.77051620112725",S067
+S064,Maria Astral,F,Fitness & Sports,Carok,A Lady should not be left well alone...,"-7.295408695757229, 112.77335441165161",S061
+S065,Tina Lori,F,Social Interest,Buddy,Want a new friend to chat :love:,"-7.288448362088709, 112.76871288136144",S079
+S066,Budi Sariawan,M,Social Interest,Hangout,"My name is Budi Sariawan, I am 20 years old, my house is in the West part of Surabaya. I don't drink, but I occasionally smoke. I’m in bed by 11 PM, and make sure I get eight hours of sleep, no matter what. After having a glass of warm milk and doing about twenty minutes of stretches before going to bed, I usually have no problems sleeping until morning. Just like a baby, I wake up without any fatigue or stress in the morning.","-7.295072337075601, 112.78018622364785",S056
+S067,Denzel Cole,M,Entertainment,Music,"And I said what I said, You scared.","-7.296965006649828, 112.78062829378693",S063;S071
+S068,Bayle Dread,M,Entertainment,Games,CURSE YOU IGON,"-7.298083601956403, 112.78108840757531",S069;S080
+S069,Melina Malenia,F,Entertainment,Games,Need someone to clean the rotted apple in my fridge,"-7.29930957916918, 112.77738494243542","S068"""
+S070,Kendrick Curry,M,Entertainment,Music,I did it again. GNX.,"-7.301801792546073, 112.77490393650963",S016
+S071,Valeria Kafka,F,Entertainment,Music,You wont remember a thing except me,"-7.2990844277945355, 112.77533712703617",S067;S073
+S072,Irwanto Agung Sudjati,M,Fitness & Sports,Cycling,Dont take it too serious man. Just gowes lah,"-7.299494099430857, 112.77188043857748",S026
+S073,Cecilia Adriana,F,Entertainment,Music,"Lets play music together, i will play the violin","-7.298671332790281, 112.76948259142775",S071
+S074,Amanda Violet,F,Entertainment ,Books,I want to find the true meaning of life,"-7.292922549313465, 112.77764936904484",S019
+S075,Samuel Darsono,M,Education,Study Partner,Let's get smarter together my friend !,"-7.290579925111176, 112.77796730854796",S048
+S076,Ivan Anggriawan,M,Education,Computer & Programming,I FINALLY COMPILED MY CODE WITHOUT ERROR AFTER 6 HOURS !!!,"-7.285117153248281, 112.78374108592584",S039
+S077,Ferry Rifandah,M,Entertaintment,Movie,Why do i suddenly really interested in some K-Dramas ?,"-7.2818239891242245, 112.77773594052711",S028;S058
+S078,Muhammad Kamil Putra,M,Education,Engineering,"One Heart, One Voice, We're United","-7.281861724667449, 112.77917481210075",S024;S041
+S079,John Silitonga,M,Social Interest,Buddy,"They said i could find a new friend here, can i?","-7.271153739426075, 112.77559812652845",S065
+S080,Arya Dipta Mahesa,M,Entertainment,Game,Let me show you my aim after 12 hour gaming session,"-7.274279811248935, 112.77867299911009",S068
