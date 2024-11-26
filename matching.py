@@ -5,7 +5,17 @@ from tkinter import Tk, Label, Button, PhotoImage, Toplevel, messagebox
 # Load dataset
 def load_data(file_path):
     data = pd.read_csv(file_path)
+    validate_coordinates(data)
     return data
+
+
+def validate_coordinates(data):
+    for index, row in data.iterrows():
+        lat, lon = map(float, row["Locations"].split(','))
+        if not (-90 <= lat <= 90):
+            raise ValueError(f"Invalid latitude at row {index}: {lat}")
+        if not (-180 <= lon <= 180):
+            raise ValueError(f"Invalid longitude at row {index}: {lon}")
 
 # Calculate match score
 def calculate_match_score(person, candidate, weights, traits):
@@ -14,7 +24,7 @@ def calculate_match_score(person, candidate, weights, traits):
     # Matching categories and specific categories
     if person["Category"] == candidate["Category"]:
         score += weights["category"]
-        if person["Spesific category"] == candidate["Spesific category"]:
+        if person["Spesific_category"] == candidate["Spesific_category"]:
             score += weights["specific_category"]
 
     # Matching interests (number of traits overlapping)
@@ -22,13 +32,13 @@ def calculate_match_score(person, candidate, weights, traits):
     score += weights["multiple_interests"] * overlapping_interests
 
     # Distance
-    person_loc = tuple(map(float, person["Coordinate"].split(',')))
-    candidate_loc = tuple(map(float, candidate["Coordinate"].split(',')))
+    person_loc = tuple(map(float, person["Locations"].split(',')))
+    candidate_loc = tuple(map(float, candidate["Locations"].split(',')))
     distance = geodesic(person_loc, candidate_loc).kilometers
     score += max(0, weights["distance"] / (1 + distance))  # Penalize farther distances
 
     # Former matches
-    if candidate["ID"] in person["Former Matched"].split(';'):
+    if candidate["ID"] in person["Former_matched"].split(';'):
         score += weights["former_match"]
 
     return score
