@@ -9,4 +9,4 @@ Our group consist of:
 | Muiz Surya Fata    | 5025231005     |
 | Alfa Radithya Fanany    | 5025231008   |
 | Muhammad Iqbal Shafarel      | 5025231080     |
-| Ali RIdho      | 5025231162     |
+| Ali Ridho      | 5025231162     |
